@@ -103,6 +103,12 @@
     height: 25vh;   
   }   
 
+  .sugerencia h5{
+    display: flex;
+    align-items:center;  
+    justify-content: center;
+  }
+
   .cajasugerencia{   
     float: left;
     margin: 3.4% 3.4% 30% 30%;    
