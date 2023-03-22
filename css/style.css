@@ -53,21 +53,33 @@
     background-color: #565655;
 }
 
+.img-bussiness{
+  display: flex;
+  align-items: center;
+  flex-direction: column;   
+  justify-content: center; 
+  background-color:#565655;
+}
+
  
 .img-bussiness p{   
   display: flex;
   align-items: center;
   flex-direction: column;   
   justify-content: center; 
-    color: white;
-    font-size: 28px;   
+  color: white;
+  font-size: 28px;   
     
 }
 
-.img-bussiness img{    
-    
-    margin: 50px;
-      
+.img-bussiness img{  
+  padding-top: 40px;
+  margin-left: 130px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;   
+  justify-content: center;      
     }
 
 .search{
@@ -268,7 +280,7 @@
     margin: 3.4% 3.4% 30% 30%;    
     overflow: hidden;
     padding: 0;   
-    height: 15vh;
+    height: 17vh;
     width: 48%;
     background-color: #ffff;
     border-radius: 5px;
@@ -283,7 +295,7 @@
   
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
     .cajasugerencia{   
       
       height: 25vh;
@@ -298,6 +310,22 @@
       width: 60vh;
     } 
   }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px){
+    .cajasugerencia{ 
+      float: inline-start;      
+      display: flex;
+      align-items:end;  
+      justify-content: center;   
+    } 
+    
+    .sugerencia{   
+      background-image: none;
+    } 
+
+
+  }
+  
     
 
  
