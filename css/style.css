@@ -57,26 +57,23 @@
     display: flex;
     align-items: center;
     flex-direction: column;   
-    justify-content: center;     
+    justify-content: center;    
     
 }
-.img-bussiness p{    
-    color: white;
-    font-size: 25px;
-    padding: 	0;
-    margin: 0;
-    margin-top: 30px;
-}
-.img-bussiness h4{
-    text-align: left;
+ 
+.img-bussiness p{   
+  display: flex;
+  align-items: center;
+  flex-direction: column;   
+  justify-content: center; 
     color: white;
     font-size: 28px;   
     
 }
 
 .img-bussiness img{    
-    margin-top: 30px;
-    width: 40px; 
+    
+    margin: 50px;
       
     }
 
