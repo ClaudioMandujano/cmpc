@@ -154,15 +154,19 @@
   width: 70px;
 }
 
-  .sugerencia button{     
-    margin-top: 5px;
-    margin-bottom: 5px;
+  .sugerencia button{
+    margin-top: 6px;
+    margin-bottom: 6px;
     border-radius: 25px;
-    border: 1;
+    border: 0;    
     border-color: lightgray;
     box-shadow: 1px 1px 5px 1px lightgray;
-    width: 170px;    
+    width: 180px;    
     
+  }
+
+  .sugerencia button:hover{
+    background-color: #8ab524
   }
 
 /* INICIO DE CAROUSEL */
