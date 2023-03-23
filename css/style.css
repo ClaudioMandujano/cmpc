@@ -53,7 +53,8 @@
     background-color: #565655;
 }
 
-.img-bussiness{
+.img-bussiness img{
+  width: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;   
@@ -306,17 +307,8 @@
       height: 40vh; 
       width: 60vh;
     } 
-    .img-bussiness{
-      padding: 0;
-    }
-    .img-bussiness{
-      padding: 0px;
-      display: flex;
-      align-items: center;
-      flex-direction: column;   
-      justify-content: center; 
-      margin: 0px;
-    }
+  
+  
 
   }
 
@@ -332,14 +324,13 @@
       background-image: none;
     } 
 
-    .img-bussiness{
-      padding: 0px;
-      display: flex;
-      align-items: center;
-      flex-direction: column;   
-      justify-content: center; 
-      margin: 0px;
-    }
+   
+
+    .search{
+      justify-content: center;
+      
+     
+  }
 
 
   }
