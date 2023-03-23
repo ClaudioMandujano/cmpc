@@ -260,13 +260,13 @@
 }
 
 .carousel {
-  float: right;
-  width: 50%;
+  float: right; 
   max-width:300px;
-  min-width: 900px;  
+  min-width: 800px;  
   align-items: center;  
   justify-content: center;
-  margin-right: 190px;
+  flex-direction: column;
+  margin-right: 60px;
   
 }
 
@@ -276,10 +276,8 @@
     color: #4d4d4d;
   }
  
-
-
- 
-@media handheld, only screen and (max-width: 1366px) {
+  
+@media only screen and (max-width: 1366px) {
   .cajasugerencia{   
     float: left;
     margin: 2% 2% 40% 29%;    
