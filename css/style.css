@@ -331,18 +331,26 @@
      
   }
 
+}
   @media (min-width: 320px) and (max-width: 480px) {
-  
-    .sugerencia{
-      background-image: none;
-    }
-   
+    .cajasugerencia{   
+      display: flex;      
+      justify-content: end;          
+      height: 50vh;
+      margin-right: 10px;
+      margin-left: 80px; 
+      margin-top: 30px;
     
   }
+  .sugerencia{   
+    height: 60vh; 
+    width: 50vh;
+    
+  }   
 
 
   }
   
-    
+
 
  
