@@ -131,9 +131,11 @@
   }   
 
   .sugerencia h5{
+   font-weight: bold;
+    padding-left: 50px;
     display: flex;
     align-items:center;  
-    justify-content: center;
+    
   }
 
   .cajasugerencia{   
@@ -234,7 +236,7 @@
 .carousel > .wrap > ul {
   list-style: none;
   white-space: nowrap;
-  height: 100px;
+  height: 110px;
 }
 .carousel > .wrap > ul > li {
   display: inline-block;
