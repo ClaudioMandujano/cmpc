@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=Nunito:ital,wght@0,200;0,300;0,400;1,600&family=Poppins:wght@200;300;400;500;600;800&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap');
 
+*{
 
+  margin: 0;
+  
+  padding: 0;
+  
+  }
+  body{
+
+    font-family: 'Nunito', italic;
+    
+    }
 
 .logo{
     width: 130px;
@@ -68,11 +79,14 @@
   flex-direction: column;   
   justify-content: center; 
   color: white;
-  font-size: 28px;   
+  font-size: 28px; 
+  padding-bottom: 20px;  
     
 }
 
-.img-bussiness img{  
+.img-bussiness img{
+  height: 120px;
+  width: 120px; 
   padding-top: 40px;
   margin-left: 110px;
   margin-bottom: 20px;
@@ -216,7 +230,7 @@
 .carousel > .wrap > ul {
   list-style: none;
   white-space: nowrap;
-  height: 200px;
+  height: 100px;
 }
 .carousel > .wrap > ul > li {
   display: inline-block;
@@ -242,7 +256,7 @@
 .carousel {
   float: right;
   width: 50%;
-  max-width: 900px;
+  max-width:300px;
   min-width: 900px;  
   align-items: center;  
   justify-content: center;
@@ -256,11 +270,7 @@
     color: #4d4d4d;
   }
  
-.footer{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-left: 500px;
-}
+
 
  
 @media handheld, only screen and (max-width: 1366px) {
@@ -300,7 +310,7 @@
     } 
 
     .carousel {
-      display: block;
+      display: flex;
       font-size: 0;
       border-radius: 8px;
       padding: 8px;
