@@ -74,7 +74,7 @@
 
 .img-bussiness img{  
   padding-top: 40px;
-  margin-left: 130px;
+  margin-left: 110px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -276,7 +276,7 @@
     float: left;
     margin: 2% 2% 40% 29%;    
     overflow: hidden;     
-    height: 19vh;
+    height: 22vh;
     width: 43%;
     background-color: #ffff;
     border-radius: 5px;
@@ -286,7 +286,8 @@
   } 
   
   .sugerencia{   
-    height: 23vh; 
+    height: 30vh;
+    
   } 
   
   }
@@ -305,6 +306,9 @@
       height: 40vh; 
       width: 60vh;
     } 
+    .img-bussiness{
+      padding: 0;
+    }
   }
 
   @media (min-width: 481px) and (max-width: 767px){
@@ -318,6 +322,10 @@
     .sugerencia{   
       background-image: none;
     } 
+
+    .img-bussiness{
+      padding: 0;
+    }
 
 
   }
