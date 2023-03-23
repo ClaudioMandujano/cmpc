@@ -298,34 +298,19 @@
  
 }
 
-.cardbosque2{
-  background: url(../img/fotobosque.png) no-repeat;
-  display: grid;
-  place-content: center;
-  margin-right: 110px;
-}
-.cardbosque3{
-  background: url(../img/fotomadera.png) no-repeat;
-  display: grid;
-  place-content: center;
-  margin-right: 110px;
+.texto-card{
+  color: #ffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: justify;
 }
 
-.cardbosque4{
-  background: url(../img/fotopulp.png) no-repeat;
-  display: grid;
-  place-content: center;
-  margin-right: 110px;
+.text-card-medio{
+  color: #3a3a3a;
+  text-align: justify;
 }
-
-
-
-
-
-
-
-
-
 
   
 @media only screen and (max-width: 1366px) {
