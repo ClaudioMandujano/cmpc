@@ -19,7 +19,7 @@
 }
 
 .navdown{
-    background-color: #F0F0F0;   
+    background-color: #efedee;   
 
 }
 
@@ -276,6 +276,57 @@
     color: #4d4d4d;
   }
  
+
+
+
+/*   CELULOSA PAGE             */
+
+.map{
+  align-items: center;  
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.cards-celulosa{
+  background-color: #ffff;
+}
+
+.cardbosque1{  
+  display: grid;
+  place-content: center;
+ 
+}
+
+.cardbosque2{
+  background: url(../img/fotobosque.png) no-repeat;
+  display: grid;
+  place-content: center;
+  margin-right: 110px;
+}
+.cardbosque3{
+  background: url(../img/fotomadera.png) no-repeat;
+  display: grid;
+  place-content: center;
+  margin-right: 110px;
+}
+
+.cardbosque4{
+  background: url(../img/fotopulp.png) no-repeat;
+  display: grid;
+  place-content: center;
+  margin-right: 110px;
+}
+
+
+
+
+
+
+
+
+
+
   
 @media only screen and (max-width: 1366px) {
   .cajasugerencia{   
