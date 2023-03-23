@@ -343,6 +343,17 @@
   text-align: justify;
 }
 
+
+.siguenos{ 
+  height: 1px;  
+  color: #3a3a3a;
+  font-size: 18px;
+  padding-left: 100px
+}
+
+footer-celulosa{
+ height: 200px !important; 
+}
   
 @media only screen and (max-width: 1366px) {
   .cajasugerencia{   
@@ -391,7 +402,9 @@
       height: 200px;
       -webkit-overflow-scrolling: touch;
       /* for tablets */
+
     }
+   
 
 
   }
@@ -420,9 +433,7 @@
   .carousel{
     display: none;
   }
-  .card-image-maderas .card-image-maderas .card-image-pulp{
-    display: none;
-  }
+  
 
 }
   @media (min-width: 320px) and (max-width: 480px) {
@@ -446,9 +457,7 @@
   .carousel{
     display: none;
   }
-  .card-image-maderas .card-image-maderas .card-image-pulp{
-    display: none;
-  }
+  
 
   }
   
