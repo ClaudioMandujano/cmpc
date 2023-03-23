@@ -288,8 +288,20 @@
   display: flex;
 }
 
+.card-image{
+  width: 12vh;
+  margin:auto;
+  margin-top: 150px;
+}
+
 .cards-celulosa{
   background-color: #ffff;
+}
+
+.cards-celulosa h2{
+  color: #8ab524;
+  font-weight: bold;
+  font-size: 60px;
 }
 
 .cardbosque1{  
