@@ -8,9 +8,7 @@
   
   }
   body{
-
-    font-family: 'Nunito', italic;
-    
+    font-family: 'Nunito', italic;    
     }
 
 .logo{
@@ -123,161 +121,75 @@
     background-color: #565655;    
   }
 
-.sugerencia{  
-    background: url(../img/bosque.png) no-repeat;
-    background-size: cover;
-    height: 25vh; 
-    margin-top: 100px;  
-  }   
 
-  .sugerencia h5{
-   font-weight: bold;
-    padding-left: 50px;
-    display: flex;
-    align-items:center;  
-    
-  }
-
-  .cajasugerencia{   
-    float: left;
-    margin: 3.4% 3.4% 30% 30%;    
-    overflow: hidden;
-    padding: 0;   
-    height: 15vh;
-    width: 40%;
-    background-color: #ffff;
-    border-radius: 5px;
-    display: flex;
-    align-items:end;  
-    justify-content: center;
-  }
-  
-.sugerencia img{
-  width: 70px;
-}
-
-  .sugerencia button{
-    margin-top: 6px;
-    margin-bottom: 6px;
-    border-radius: 25px;
-    border: 0;    
-    border-color: lightgray;
-    box-shadow: 1px 1px 5px 1px lightgray;
-    width: 180px;    
-    
-  }
-
-  .sugerencia button:hover{
-    background-color: #8ab524
-  }
 
 /* INICIO DE CAROUSEL */
 
-
-.touch .carousel {
-  overflow: auto;
-}
-.carousel[data-at*=left] > .wrap::before {
-  opacity: 1;
-  text-indent: -50px;
-}
-.carousel[data-at*=right] > .wrap::after {
-  opacity: 1;
-  text-indent: -50px;
-}
-.carousel::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  z-index: 4;
-  bottom: -4px;
-  left: 0;
-  background: #8ab524;
-  height: 4px;
-  border-radius: 4px;
-  opacity: 0;
-  width: var(--scrollWidth, 0);
-  left: var(--scrollLleft, 0);
-  transition: opacity 0.2s, bottom 0.2s;
-}
-.carousel:hover::after {
-  opacity: 1;
-  bottom: -10px;
-}
-.carousel > .wrap {
-  overflow: hidden;
-  border-radius: 4px;
-}
-.carousel > .wrap::before, .carousel > .wrap::after {
-  content: "‹";
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 2;
-  width: 50px;
-  font-size: 80px;
-  text-indent: -30px;
-  line-height: 200px;
-  font-family: monospace;
-  color: #555;
-  font-weight: bold;
-  border-radius: 8px;
-  pointer-events: none;
-  transition: 0.2s ease-out;
-  background: linear-gradient(to right, white 20%, transparent);
-}
-.carousel > .wrap::after {
-  transform: rotate(180deg);
-  left: auto;
-  right: 0;
-}
-.carousel > .wrap > ul {
-  list-style: none;
-  white-space: nowrap;
-  height: 110px;
-}
-.carousel > .wrap > ul > li {
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-  margin: 0 0 0 5px;
-  position: relative;
-  overflow: hidden;
-  transition: 0.25s ease-out;
-}
-.carousel > .wrap > ul > li:first-child {
-  margin: 0;
-}
-.carousel > .wrap > ul > li > img {
-  display: block;
-  height: 100%;
-  margin: auto; 
-  position: relative;
-  z-index: 1;
-  transition: 1s ease;
-}
-
-.carousel {
-  float: right; 
-  max-width:300px;
-  min-width: 800px;  
-  align-items: center;  
+.cuerpo{
+  display: flex;
+  padding: 0 35px;
+  min-height: 30vh;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
- 
+  background: #ffff;
+}
+
+.wrapper{
+  display: flex;    
+  max-width: 1000px;
+  position: relative;
+}
+
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #efedee;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth; 
   
 }
-
-  .carousel h3{
-    text-align: center;
-    margin-top: 30px;
-    color: #4d4d4d;
-  }
- 
-
-
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{  
+  height: 100px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 100px;
+  width: calc(33% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
 
 /*   CELULOSA PAGE             */
 
@@ -287,6 +199,7 @@
   flex-direction: column;
   display: flex;
 }
+
 
 .card-image{
   width: 12vh;
@@ -351,9 +264,11 @@
   padding-left: 100px
 }
 
+
 footer-celulosa{
- height: 200px !important; 
+ height: 200px !important;  
 }
+
   
 @media only screen and (max-width: 1366px) {
   .cajasugerencia{   
@@ -376,7 +291,12 @@ footer-celulosa{
   
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media screen and (max-width: 900px) {
+
+      .carousel img{
+        width: calc(30% /2);
+      }
+
     .cajasugerencia{   
       
       height: 25vh;
@@ -390,21 +310,6 @@ footer-celulosa{
       height: 40vh; 
       width: 60vh;
     } 
-
-    .carousel {
-      display: flex;
-      font-size: 0;
-      border-radius: 8px;
-      padding: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      background: white;
-      transform: translateZ(0);
-      height: 200px;
-      -webkit-overflow-scrolling: touch;
-      /* for tablets */
-
-    }
-   
 
 
   }
@@ -430,13 +335,15 @@ footer-celulosa{
       justify-content: center;      
      
   }
-  .carousel{
-    display: none;
-  }
-  
 
 }
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
+    
+    .carousel img{
+      width: 30%;
+    }
+       
+    
     .cajasugerencia{   
       display: flex;      
       justify-content: end;          
@@ -454,10 +361,7 @@ footer-celulosa{
   .sugerencia button{
     padding-top: 5px;
   }
-  .carousel{
-    display: none;
-  }
-  
+   
 
   }
   

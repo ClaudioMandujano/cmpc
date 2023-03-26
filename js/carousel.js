@@ -1,114 +1,60 @@
-
-function HoverCarousel( elm, settings ){
-    this.DOM = {
-      scope: elm,
-      wrap: elm.querySelector('ul').parentNode
+const carousel = document.querySelector(".carousel"),
+firstImg = carousel.querySelectorAll("img")[0],
+arrowIcons = document.querySelectorAll(".wrapper i");
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+const showHideIcons = () => {
+    // showing and hiding prev/next icon according to carousel scroll left value
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+}
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+        // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+        setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+    });
+});
+const autoSlide = () => {
+    // if there is no image left to scroll then return from here
+    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+    positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+    let firstImgWidth = firstImg.clientWidth + 14;
+    // getting difference value that needs to add or reduce from carousel left to take middle img center
+    let valDifference = firstImgWidth - positionDiff;
+    if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
     }
-    
-    this.containerWidth = 0;
-    this.scrollWidth = 0;
-    this.posFromLeft = 0;    // Stripe position from the left of the screen
-    this.stripePos = 0;    // When relative mouse position inside the thumbs stripe
-    this.animated = null;
-    this.callbacks = {}
-    
-    this.init()
-  }
-  
-  HoverCarousel.prototype = {
-    init(){
-      this.bind()
-    },
-    
-    destroy(){
-      this.DOM.scope.removeEventListener('mouseenter', this.callbacks.onMouseEnter)
-      this.DOM.scope.removeEventListener('mousemove', this.callbacks.onMouseMove)
-    },
-  
-    bind(){
-      this.callbacks.onMouseEnter = this.onMouseEnter.bind(this)
-      this.callbacks.onMouseMove = e => {
-        if( this.mouseMoveRAF ) 
-          cancelAnimationFrame(this.mouseMoveRAF)
-  
-        this.mouseMoveRAF = requestAnimationFrame(this.onMouseMove.bind(this, e))
-      }
-      
-      this.DOM.scope.addEventListener('mouseenter', this.callbacks.onMouseEnter)
-      this.DOM.scope.addEventListener('mousemove', this.callbacks.onMouseMove)
-    },
-    
-    // calculate the thumbs container width
-    onMouseEnter(e){
-      this.nextMore = this.prevMore = false // reset
-  
-      this.containerWidth       = this.DOM.wrap.clientWidth;
-      this.scrollWidth          = this.DOM.wrap.scrollWidth; 
-      // padding in percentage of the area which the mouse movement affects
-      this.padding              = 0.2 * this.containerWidth; 
-      this.posFromLeft          = this.DOM.wrap.getBoundingClientRect().left;
-      var stripePos             = e.pageX - this.padding - this.posFromLeft;
-      this.pos                  = stripePos / (this.containerWidth - this.padding*2);
-      this.scrollPos            = (this.scrollWidth - this.containerWidth ) * this.pos;
-  
-      // temporary add smoothness to the scroll 
-      this.DOM.wrap.style.scrollBehavior = 'smooth';
-      
-      if( this.scrollPos < 0 )
-        this.scrollPos = 0;
-      
-      if( this.scrollPos > (this.scrollWidth - this.containerWidth) )
-        this.scrollPos = this.scrollWidth - this.containerWidth
-  
-      this.DOM.wrap.scrollLeft = this.scrollPos
-      this.DOM.scope.style.setProperty('--scrollWidth',  (this.containerWidth / this.scrollWidth) * 100 + '%');
-      this.DOM.scope.style.setProperty('--scrollLleft',  (this.scrollPos / this.scrollWidth ) * 100 + '%');
-  
-      // lock UI until mouse-enter scroll is finihsed, after aprox 200ms
-      clearTimeout(this.animated)
-      this.animated = setTimeout(() => {
-        this.animated = null
-        this.DOM.wrap.style.scrollBehavior = 'auto';
-      }, 200)
-  
-      return this
-    },
-  
-    // move the stripe left or right according to mouse position
-    onMouseMove(e){
-      // don't move anything until inital movement on 'mouseenter' has finished
-      if( this.animated ) return
-  
-      this.ratio = this.scrollWidth / this.containerWidth
-      
-      // the mouse X position, "normalized" to the carousel position
-      var stripePos = e.pageX - this.padding - this.posFromLeft 
-      
-      if( stripePos < 0 )
-          stripePos = 0
-  
-      // calculated position between 0 to 1
-      this.pos = stripePos / (this.containerWidth - this.padding*2) 
-      
-      // calculate the percentage of the mouse position within the carousel
-      this.scrollPos = (this.scrollWidth - this.containerWidth ) * this.pos 
-  
-      this.DOM.wrap.scrollLeft = this.scrollPos
-      
-      // update scrollbar
-      if( this.scrollPos < (this.scrollWidth - this.containerWidth) )
-        this.DOM.scope.style.setProperty('--scrollLleft',  (this.scrollPos / this.scrollWidth ) * 100 + '%');
-  
-      // check if element has reached an edge
-      this.prevMore = this.DOM.wrap.scrollLeft > 0
-      this.nextMore = this.scrollWidth - this.containerWidth - this.DOM.wrap.scrollLeft > 5
-      
-      this.DOM.scope.setAttribute('data-at',
-        (this.prevMore  ? 'left ' : ' ')
-        + (this.nextMore ? 'right' : '')
-      )
-    }
-  }
-             
-  var carouselElm = document.querySelector('.carousel')
-  new HoverCarousel(carouselElm)                          
+    // if user is scrolling to the left
+    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+}
+const dragStart = (e) => {
+    // updatating global variables value on mouse down event
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = carousel.scrollLeft;
+}
+const dragging = (e) => {
+    // scrolling images/carousel to left according to mouse pointer
+    if(!isDragStart) return;
+    e.preventDefault();
+    isDragging = true;
+    carousel.classList.add("dragging");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
+}
+const dragStop = () => {
+    isDragStart = false;
+    carousel.classList.remove("dragging");
+    if(!isDragging) return;
+    isDragging = false;
+    autoSlide();
+}
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("touchstart", dragStart);
+document.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchmove", dragging);
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("touchend", dragStop);
