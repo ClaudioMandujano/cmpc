@@ -293,6 +293,12 @@ footer-celulosa{
 
   @media screen and (max-width: 900px) {
 
+     .wrapper{
+      display: flex;    
+      max-width: 500px;
+      position: relative;
+    }
+
       .carousel img{
         width: calc(30% /2);
       }
@@ -339,8 +345,16 @@ footer-celulosa{
 }
   @media screen and (max-width: 550px) {
     
+    .wrapper{
+      display: flex;    
+      max-width: 300px;
+      position: relative;
+    }
+
+
     .carousel img{
-      width: 30%;
+      width: 15%;
+      height: 100%;
     }
        
     
