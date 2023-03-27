@@ -121,14 +121,56 @@
     background-color: #565655;    
   }
 
+ /* SECCIÓN DE SUGERENCIA */
+
+  .sugerencia{
+    background: url(../img/bosque.png) no-repeat;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    display: flex;
+    align-items: center;      
+    justify-content: center;       
+  }
+
+  .card-sug{    
+   width: 40%;      
+  }
+ 
+  .card-sug p{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+
+  
+  }
+
+  .card-sug button{
+   display: flex;
+   align-items: center;
+   flex-direction: center;
+   justify-content: center;
+   width: 78%;
+
+  }
+
+  .img-sug{
+    margin: auto;
+    width: 25%;
+    padding-top: 10%;
+  }
+
+
+
+
 
 
 /* INICIO DE CAROUSEL */
 
 .cuerpo{
-  display: flex;
-  padding: 0 35px;
-  min-height: 30vh;
+  display: flex; 
+  min-height: 20vh;
   align-items: center;
   justify-content: center;
   background: #ffff;
@@ -271,25 +313,7 @@ footer-celulosa{
 
   
 @media only screen and (max-width: 1366px) {
-  .cajasugerencia{   
-    float: left;
-    margin: 2% 2% 40% 29%;    
-    overflow: hidden;     
-    height: 22vh;
-    width: 43%;
-    background-color: #ffff;
-    border-radius: 5px;
-    display: flex;
-    align-items:end;  
-    justify-content: center;
-  } 
-  
-  .sugerencia{   
-    height: 30vh;
-    
-  } 
-  
-  }
+}
 
   @media screen and (max-width: 900px) {
 
@@ -301,39 +325,12 @@ footer-celulosa{
 
       .carousel img{
         width: calc(30% /2);
-      }
-
-    .cajasugerencia{   
-      
-      height: 25vh;
-      display: flex;
-      align-items:end;  
-      justify-content: center;
-      padding-bottom: 50px;
-    } 
-    
-    .sugerencia{   
-      height: 40vh; 
-      width: 60vh;
-    } 
-
+      }    
 
   }
 
   @media (min-width: 481px) and (max-width: 767px){
-    .cajasugerencia{       
-      display: flex;      
-      justify-content: center;
-      padding-bottom: 30px;      
-      height: 50vh;
-      padding-left: 30px;      
-    }    
-    
-    .sugerencia{   
-      height: 60vh; 
-      width: 70vh;
-      
-    }   
+   
     .search{
       display: flex;
       align-items: center;
@@ -356,27 +353,7 @@ footer-celulosa{
       width: 15%;
       height: 100%;
     }
-       
-    
-    .cajasugerencia{   
-      display: flex;      
-      justify-content: end;          
-      height: 45vh;
-      margin-right: 5px;
-      margin-left: 110px; 
-      margin-top: 20px;
-    
-  }
-  .sugerencia{   
-    height: 60vh; 
-    width: 50vh;
-    
-  }   
-  .sugerencia button{
-    padding-top: 5px;
-  }
-   
-
+         
   }
   
 
