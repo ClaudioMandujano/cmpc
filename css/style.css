@@ -445,6 +445,8 @@
 
 
   @media (max-width: 1000px) {
+   
+
     .navbar-collapse {
       text-align: center;      
       
@@ -505,5 +507,13 @@
       }
                  
   }
-
- 
+  @media (max-width: 767.98px) {
+    .container-footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .container-footer > div:first-child {
+      margin-bottom: 1rem;
+    }
+  }
