@@ -12,54 +12,61 @@
 </head>
 <body>
   <!-- NAVBAR SECTION -->
-  <section class="mt-4">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <section class="mt-3 navbar-custom">      
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand " href="/">
-          <img src="img/logo.png" alt="CMPC" class="logo ">
+        <a class="navbar-brand" style="margin-left: 15%;" href="/">
+          <img src="img/logo.png" alt="Logo" height="40">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"">
-                  <ul class=" navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item d-none d-xl-block d-xxl-block ">
-            <a class="nav-link ms-2 px-3" href="#" style="background-color: #8ab524; border-radius: 100%;"><i
-                class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-          </li>
-          <li class="nav-item d-none d-xl-block d-xxl-block">
-            <a class="nav-link ms-2 px-3" href="#" style="background-color: #8ab524; border-radius: 100%;"><i
-                class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-          </li>
-          <li class="nav-item d-none d-xl-block d-xxl-block">
-            <a class="nav-link ms-2 px-3" href="#" style="background-color: #8ab524; border-radius: 100%;"><i
-                class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
-          </li>
-          <li class="nav-item ms-2 pb-2">
-            <button type="button nav-link" class="btn user-sesion">Crea tu cuenta</button>
-          </li>
-          <li class="nav-item ms-2">
-            <button type="button nav-link" class="btn user-sesion" style="color: #8ab524;"><i
-                class="fa-solid fa-user px-2" style="color: #8c8c8c;"></i>Inicia Sesión</button>
-          </li>
-          </ul>
-          <div class="dropdown d-flex ms-2">
-            <button class="btn user-sesion dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Spanish (latin-américa)
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">English</a>
-              <a class="dropdown-item" href="#">Portuguese</a>
-              <a class="dropdown-item" href="#">Frances</a>
-            </div>
-          </div>
-        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link social" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link social" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link social" href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="nav-item flex-grow-1" style="margin-left: 10px;">
+              <button type="button" class="nav-link btn btn-outline-secondary btn-rounded py-1 px-3" style="background-color: transparent; border: 1; border-radius: 25px; font-size: 14px;font-weight: bold;height: 37px;">
+                Crea tu cuenta
+              </button>
+            </li>
+            <li class="nav-item flex-grow-1" style="margin-right: 120px; margin-left: 5px;">
+              <button type="button" class="nav-link btn btn-outline-secondary btn-rounded py-1 px-3" style="background-color: transparent; border: 1; border-radius: 25px; font-size: 14px; font-weight: bold; color: #8ab524;height: 37px; "><i class="fa-solid fa-user" style="color: #6b6b6b;"></i>
+                Inicia sesión
+              </button>
+            </li>
+            <li class="nav-item dropdown">              
+              <button type="button" class="nav-link dropdown-toggle btn btn-outline-secondary btn-rounded py-2 px-4"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: transparent; border: 1; border-radius: 25px; font-size: 14px; font-weight: bold; height: 37px;">
+                Spanish(Latin America)
+              </button>
+  
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="margin-left: 15%;">
+                <li><a class="dropdown-item" href="#">Enlace 1</a></li>
+                <li><a class="dropdown-item" href="#">Enlace 2</a></li>
+                <li><a class="dropdown-item" href="#">Enlace 3</a></li>
+              </ul>
+            </li 
+            </ul>           
       </div>
-    </nav>
-  </section>
-  <section>
+    </div>
+  </nav>  
+</section>
+
+
+  <section style="background-color: efedee;">
     <nav class="navbar navdown navbar-expand-lg">
         <div class="container-fluid">  
             <ul class="navbar-nav mx-auto">                            
@@ -82,20 +89,38 @@
      <!-- FINAL HERO SECTION -->
 
      <section class="container-fluid" style="background-color: #565655">
-        <div class="container img-bussiness" style="background-color: #565655" ;>
-          <div class="row" style="align-items: center;">
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 ml-5">
-             <p class="pt-5">Conoce<br/>nuestros<br/>negocios</p>                
+      <div class="container img-bussiness" style="background-color: #565655;">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+            <div class="image-wrapper">
+              <img src="img/conune.png" class="img-fluid">                     
             </div>
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 "><img src="img/celulosa.png" class="img-fluid">                              
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+            <div class="image-wrapper">
+              <img src="img/celulosa.png" class="img-fluid">
+              <i class="fa-solid fa-angle-right px-3 d-none d-sm-inline" style="color: #8ab524;"></i>
             </div>
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 "><img src="img/Biopackaging.png" class="img-fluid">
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+            <div class="image-wrapper">
+              <img src="img/Biopackaging.png" class="img-fluid">
+              <i class="fa-solid fa-angle-right px-3 d-none d-sm-inline" style="color: #8ab524;"></i>
             </div>
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 "><img src="img/softys.png" class="img-fluid">                
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+            <div class="image-wrapper">
+              <img src="img/softys.png" class="img-fluid">                     
+            </div>
+          </div>
+          <div class="col-12 d-sm-none">
+            <div class="image-wrapper">
+              <i class="fa-solid fa-angle-right px-3" style="color: #8ab524;"></i>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
         <!-- FINAL BUSINESS SECTION -->
       <section class="container text-center text mt-5">
         <p>Somos responsables del patrimonio forestal, la producción y comercialización de <br> productos de madera y celulosa, elementos fundamentales en la fabricación de papel y tejidos.</p>
@@ -117,6 +142,7 @@
 
         <!-- CARDS SECTION -->
         <div class="card-group  container cards-celulosa">
+
             <div class="card bg-transparent">
                 <img class="card-img-top card-image" src="img/bosques1.png" alt="Card image cap">
                 <div class="card-body">
@@ -136,7 +162,7 @@
               </div>
             </div>
           </div>
-
+        
           <div class="card-group  container cards-celulosa mt-4">
             <div class="card bg-transparent">
                 <img class="card-img-top card-image" src="img/madera1.png" alt="Card image cap">
@@ -180,41 +206,28 @@
           </div>
          
           <!-- FOOTER-->
-          <div class="container siguenos d-none d-xl-block d-xxl-block">
-            <p>Síguenos</p>
-          </div>
-
-
-          <section class="mt-4 mb-5 footer-celulosa">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-              <div class="container">                           
-                <div style="padding-left: 100px;">
-                    <ul class=" navbar-nav mb-2 mb-lg-0">                           
-                     <li class="nav-item d-none d-xl-block d-xxl-block ">
-                    <a class="nav-link ms-2 px-3" href="#" style="background-color: #8ab524; border-radius: 100%;"><i
-                        class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                  </li>
-                  <li class="nav-item d-none d-xl-block d-xxl-block">
-                    <a class="nav-link ms-2 px-3" href="#" style="background-color: #8ab524; border-radius: 100%;"><i
-                        class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-                  </li>
-                  <li class="nav-item d-none d-xl-block d-xxl-block">
-                    <a class="nav-link ms-2 px-3" href="#" style="background-color: #8ab524; border-radius: 100%;"><i
-                        class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
-                  </li>  
-                  </ul>
+          
+          <footer>
+            <div class="container container-footer d-flex justify-content-between align-items-center py-4">
+              <div class="d-flex align-items-center flex-column justify-content-center" style="margin-left: 100px;">
+                <span class="mb-2" style="margin-right: 100px;" >Síguenos</span>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-circle bg-color-facebook me-2">
+                    <i class="fab fa-instagram text-white"></i>
+                  </a>
+                  <a href="#" class="btn btn-circle bg-color-instagram me-2">
+                    <i class="fab fa-facebook-f text-white"></i>
+                  </a>
+                  <a href="#" class="btn btn-circle bg-color-linkedin me-2">
+                    <i class="fab fa-linkedin-in text-white"></i>
+                  </a>
                 </div>
-                <div class="" style="padding-right: 130px;">
-                    <a class="navbar-brand " href="/">
-                     <img src="img/logo.png" alt="CMPC" class="logo ">
-                    </a>                     
-                </div> 
-                                   
-                </div>
-                
               </div>
-            </nav>
-          </section>
+              <div class="text-center" style="margin-right: 150px;">
+                <img src="img/logo.png" alt="Logo" height="40">
+              </div>
+            </div>
+          </footer>
 
 <script src="/js/carousel.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
