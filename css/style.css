@@ -313,6 +313,9 @@
 
 .cards-celulosa{
   background-color: #ffff;
+  max-width: 1040px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
 }
 
 .cards-celulosa h2{
@@ -323,15 +326,12 @@
 
 .cardbosque1{  
   display: grid;
-  place-content: center;
-   
+  place-content: center;  
  
 }
 
-.card-group{
-  max-width: 1040px;
-  border: 1px solid #e1e1e1;
-} 
+
+
 
 .card-body{
   padding: 0;
