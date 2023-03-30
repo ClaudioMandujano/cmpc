@@ -71,6 +71,19 @@
     height: 200px;
 }
 
+
+.image-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.image-wrapper img {
+  width: 100%;
+}
+
+.image-wrapper i {
+  margin-left: auto;
+}
 .img-card{
     margin-top: 30px;
     justify-content: center;
