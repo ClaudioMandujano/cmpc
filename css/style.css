@@ -295,20 +295,20 @@
 .card-image-bosques{
  position: absolute;
  width: 200px;
- top: 38%;
- right: 70%;
+ top: 43%;
+ right: 78%;
 }
 .card-image-maderas{
   position: absolute;
   width: 130px;
-  top: 60%;
-  right: 79%;
+  top: 75%;
+  right: 85%;
  }
  .card-image-pulp{
   position: absolute;
   width: 180px;
-  top: 45%;
-  right: 65%;
+  top: 55%;
+  right: 75%;
  }
 
 .cards-celulosa{
@@ -330,6 +330,7 @@
 
 .card-group{
   max-width: 1040px;
+  border: 1px solid #e1e1e1;
 } 
 
 .card-body{
