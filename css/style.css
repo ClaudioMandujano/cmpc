@@ -86,6 +86,7 @@
 .image-wrapper i {
   margin-left: auto;
 }
+
 .img-card{
     margin-top: 30px;
     justify-content: center;
@@ -323,7 +324,17 @@
 .cardbosque1{  
   display: grid;
   place-content: center;
+   
  
+}
+
+.card-group{
+  max-width: 1040px;
+} 
+
+.card-body{
+  padding: 0;
+  
 }
 
 .texto-card{
@@ -412,6 +423,7 @@
    .img-bussiness{
     width: 80%;  
   }
+ 
 
 
 }
@@ -439,7 +451,7 @@
         justify-content: center;     
        
     }  
-   
+      
 
   }
 
