@@ -191,7 +191,7 @@
 }
 
 .wrapper-slide {  
-  padding: 35px;
+  padding: 30px;
   position: relative;
   overflow-x: hidden;
   max-width: 1000px;
@@ -257,7 +257,7 @@
   border-radius: 30px; 
 }
 .tabs-box .tab:hover{
-  background: #efedfb;
+  background: #e3e3e3;
 }
 .tabs-box.dragging .tab {
   user-select: none;
@@ -268,6 +268,12 @@
   background: #e3e3e3;
   border-color: transparent;
 }
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 /*   CELULOSA PAGE             */
 
@@ -342,9 +348,6 @@
   padding-left: 100px
 }
 
-footer {
-  background-color: #F0F0F0;
-}
 
 .btn-circle {
   width: 45px;
@@ -368,6 +371,7 @@ footer {
 .bg-color-linkedin {
   background-color: #8ab524;
 }
+
 
 @media (max-width: 992px) {
   .container-footer {
@@ -401,12 +405,9 @@ footer {
     height: 35px;
   }
 
-
   .card-sug{    
-    width: 70%;
-              
+    width: 70%;              
    }
-
     
    .img-bussiness{
     width: 80%;  
@@ -418,13 +419,10 @@ footer {
   @media screen and (max-width: 900px) {
 
 
-
     .card-sug{    
       width: 70%;
                 
-     }
-
-   
+     }   
 
      .wrapper{
       max-width: 70%;
@@ -449,6 +447,7 @@ footer {
     .image-wrapper i {
       display: none;
     }
+    
   }
 
   @media screen and (max-width: 550px) {    
@@ -479,6 +478,8 @@ footer {
       padding-left: 50px;
       width: 70%;
       }
+
+
              
   }
   
