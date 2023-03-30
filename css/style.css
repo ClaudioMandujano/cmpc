@@ -443,6 +443,44 @@
     
   }
 
+
+  @media (max-width: 1000px) {
+    .navbar-collapse {
+      text-align: center;      
+      
+    }
+    .navbar-nav > li {
+      display: inline-block;
+      margin-right: 5px;
+      margin-left: 5px;
+      vertical-align: middle;
+      
+      
+    }
+    .btn-user{
+      display: flex;
+      justify-content: center;
+     align-items: center;
+      margin-left: 120px !important;
+      
+      
+    }
+    .navbar-nav > li:last-child {
+      margin-right: 0;
+      
+    }
+    .nav-link {
+      font-size: 14px;
+      font-weight: bold;
+      height: 37px;
+      border: 1px solid transparent;
+      border-radius: 25px;
+      padding: 0.5rem 1rem;
+      margin: 0;      
+    }
+  }
+
+
   @media screen and (max-width: 550px) {    
     .wrapper{         
       max-width: 90%      
