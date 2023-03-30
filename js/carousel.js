@@ -1,64 +1,35 @@
-const carousel = document.querySelector(".carousel");
-  const images = document.querySelectorAll(".carousel img");
-  const leftArrow = document.querySelector("#left");
-  const rightArrow = document.querySelector("#right");
-
-  let counter = 0;
-  let dragging = false;
-  let startX;
-  let scrollLeft;
-
-  leftArrow.addEventListener("click", () => {
-    if (counter > 0) {
-      counter--;
-      carousel.scrollLeft -= carousel.offsetWidth;
-    }
-    toggleArrows();
-  });
-
-  rightArrow.addEventListener("click", () => {
-    if (counter < images.length - 1) {
-      counter++;
-      carousel.scrollLeft += carousel.offsetWidth;
-    }
-    toggleArrows();
-  });
-
-  carousel.addEventListener("mousedown", (e) => {
-    dragging = true;
-    startX = e.pageX - carousel.offsetLeft;
-    scrollLeft = carousel.scrollLeft;
-    carousel.classList.add("dragging");
-  });
-
-  carousel.addEventListener("mouseleave", () => {
-    dragging = false;
-    carousel.classList.remove("dragging");
-  });
-
-  carousel.addEventListener("mouseup", () => {
-    dragging = false;
-    carousel.classList.remove("dragging");
-  });
-
-  carousel.addEventListener("mousemove", (e) => {
-    if (!dragging) return;
-    e.preventDefault();
-    const x = e.pageX - carousel.offsetLeft;
-    const walk = (x - startX) * 3;
-    carousel.scrollLeft = scrollLeft - walk;
-  });
-
-  function toggleArrows() {
-    if (counter === 0) {
-      leftArrow.style.display = "none";
-    } else {
-      leftArrow.style.display = "block";
-    }
-
-    if (counter === images.length - 1) {
-      rightArrow.style.display = "none";
-    } else {
-      rightArrow.style.display = "block";
-    }
-  }
+const tabsBox = document.querySelector(".tabs-box"),
+allTabs = tabsBox.querySelectorAll(".tab"),
+arrowIcons = document.querySelectorAll(".icon i");
+let isDragging = false;
+const handleIcons = (scrollVal) => {
+    let maxScrollableWidth = tabsBox.scrollWidth - tabsBox.clientWidth;
+    arrowIcons[0].parentElement.style.display = scrollVal <= 0 ? "none" : "flex";
+    arrowIcons[1].parentElement.style.display = maxScrollableWidth - scrollVal <= 1 ? "none" : "flex";
+}
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
+        let scrollWidth = tabsBox.scrollLeft += icon.id === "left" ? -340 : 340;
+        handleIcons(scrollWidth);
+    });
+});
+allTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        tabsBox.querySelector(".active").classList.remove("active");
+        tab.classList.add("active");
+    });
+});
+const dragging = (e) => {
+    if(!isDragging) return;
+    tabsBox.classList.add("dragging");
+    tabsBox.scrollLeft -= e.movementX;
+    handleIcons(tabsBox.scrollLeft)
+}
+const dragStop = () => {
+    isDragging = false;
+    tabsBox.classList.remove("dragging");
+}
+tabsBox.addEventListener("mousedown", () => isDragging = true);
+tabsBox.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);

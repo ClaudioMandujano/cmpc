@@ -75,10 +75,12 @@
 .image-wrapper {
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 200px;
 }
 
 .image-wrapper img {
-  width: 100%;
+  width: 60%;
 }
 
 .image-wrapper i {
@@ -159,14 +161,8 @@
   .card-sug{
    width: 45%;   
   }
- 
-  .card-sug p{
-    font-size: 25px;
-    display: flex;
-    justify-content: center;  
-  }
-
-  .card-sug button:hover{
+  
+    .card-sug button:hover{
    display: flex;
    align-items: center;
    flex-direction: center;
@@ -184,76 +180,93 @@
   
   }
 
-
-
-
-
-
 /* INICIO DE CAROUSEL */
-
-.cuerpo{
-  display: flex; 
-  min-height: 20vh;
+.box-slider{
+  display: flex;
+  padding: 0 10px;
   align-items: center;
   justify-content: center;
+  min-height: 20vh;
   background: #ffff;
 }
 
-.wrapper{
-  display: flex;    
-  max-width: 1000px;
+.wrapper-slide {  
+  padding: 35px;
   position: relative;
+  overflow-x: hidden;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 13px;
 }
-
-.wrapper i{
-  top: 50%;
-  height: 44px;
-  width: 44px;
-  color: #343F4F;
-  cursor: pointer;
-  font-size: 1.15rem;
+.wrapper-slide .icon {
   position: absolute;
-  text-align: center;
-  line-height: 44px;
-  background: #efedee;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
-}
-.wrapper i:hover{
-  background: #f2f2f2;
-}
-.wrapper i:first-child{
-  left: -22px;
-  display: none;
-}
-.wrapper i:last-child{
-  right: -22px;
-}
-.wrapper .carousel{
-  font-size: 0px;
-  cursor: pointer;
-  overflow: hidden;
-  white-space: nowrap;
-  scroll-behavior: smooth; 
+  top: 0;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;  
   
 }
-.carousel.dragging{
-  cursor: grab;
-  scroll-behavior: auto;
+
+.icon:first-child {
+  left: 0;
+  display: none;
+  background: linear-gradient(90deg, #fff 70%, transparent);
 }
-.carousel.dragging img{
+.icon:last-child {
+  right: 0;
+  justify-content: flex-end;
+  background: linear-gradient(-90deg, #fff 70%, transparent);
+}
+.icon i {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #e3e3e3;
+}
+.icon i:hover {
+  background: #efedfb;
+}
+.icon:first-child i {
+  margin-left: 15px;
+} 
+.icon:last-child i {
+  margin-right: 15px;
+} 
+.wrapper-slide .tabs-box {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.tabs-box.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+}
+.tabs-box .tab {
+  cursor: pointer;
+  font-size: 1.18rem;
+  white-space: nowrap;
+  background: #f5f4fd;
+  padding: 13px 20px;
+  border-radius: 30px; 
+}
+.tabs-box .tab:hover{
+  background: #efedfb;
+}
+.tabs-box.dragging .tab {
+  user-select: none;
   pointer-events: none;
 }
-.carousel img{  
-  height: 100px;
-  object-fit: cover;
-  user-select: none;
-  margin-left: 100px;
-  width: calc(33% / 3);
-}
-.carousel img:first-child{
-  margin-left: 0px;
+.tabs-box .tab.active{
+  color: #fff;
+  background: #e3e3e3;
+  border-color: transparent;
 }
 
 /*   CELULOSA PAGE             */
