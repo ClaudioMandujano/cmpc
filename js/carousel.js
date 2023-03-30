@@ -10,7 +10,7 @@ const handleIcons = (scrollVal) => {
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
-        let scrollWidth = tabsBox.scrollLeft += icon.id === "left" ? -340 : 340;
+        let scrollWidth = tabsBox.scrollLeft += icon.id === "left" ? -150 : 150;
         handleIcons(scrollWidth);
     });
 });
