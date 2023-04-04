@@ -1,3 +1,16 @@
+const tabs = document.querySelectorAll('.tabs-box .tab');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(tab => {
+      tab.classList.remove('active');
+    });
+    tab.classList.add('active');
+  });
+});
+
+
+
 const tabsBox = document.querySelector(".tabs-box"),
 allTabs = tabsBox.querySelectorAll(".tab"),
 arrowIcons = document.querySelectorAll(".icon i");
@@ -33,3 +46,6 @@ const dragStop = () => {
 tabsBox.addEventListener("mousedown", () => isDragging = true);
 tabsBox.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
+
+
+
