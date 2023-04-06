@@ -352,6 +352,48 @@
 }
 
 
+/*BIOPACKAGING */
+
+
+.card-image-bio{
+  width: 12vh;
+  margin:auto;
+  margin-top: 25%;
+}
+
+
+.card-image-corrugado{
+  position: absolute;
+  width: 160px;
+  top: 40%;
+  right: 95%;
+}
+
+.card-image-box{
+  position: absolute;
+  width: 130px;
+  top: 40%;
+  right: 97%;
+}
+
+.card-image-sack{
+  position: absolute;
+  width: 200px;
+  top: 40%;
+  right: 93%;
+}
+
+
+.card-image-edipac{
+  position: absolute;
+  width: 130px;
+  top: 30%;
+  right: 95%;
+}
+
+
+
+/*FOOTER */
 .siguenos{ 
   height: 1px;  
   color: #3a3a3a;
@@ -369,6 +411,7 @@
   align-items: center;
   text-decoration: none;
 }
+
 
 .bg-color-facebook {
   background-color: #8ab524;
