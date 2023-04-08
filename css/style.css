@@ -54,6 +54,15 @@
 .navbar-nav .nav-item:nth-child(2) {
   margin-right: 3px;
 }
+.btn-sesion:hover{
+ background-color: #dbd9d9;
+ border-radius: 25px;
+}
+
+.btn-cuenta:hover{
+  background-color: #dbd9d9;
+  border-radius: 25px;  
+}
 
 .card{
     background-color: #979797;
@@ -188,23 +197,23 @@
   min-height: 20vh;
   background: #ffff;
 }
-
 .wrapper-slide {  
   padding: 30px;
   position: relative;
   overflow-x: hidden;
-  max-width: 1000px;
+  max-width: 1000px; /* Modifica el ancho del contenedor a un valor menor */
   background: #fff;
   border-radius: 13px;
+  display: flex; /* Agrega la propiedad flexbox */
+  justify-content: center; /* Centra los elementos en el contenedor */
+  align-items: center; /* Centra los elementos en el contenedor */
 }
+
 .wrapper-slide .icon {
-  position: absolute;
-  top: 0;
   height: 100%;
   width: 120px;
   display: flex;
   align-items: center;  
-  
 }
 
 .icon:first-child {
@@ -225,16 +234,18 @@
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
-  background-color: #e3e3e3;
+  background-color: #e3e3e3; 
+  z-index: 1;
 }
 .icon i:hover {
   background: #efedfb;
 }
 .icon:first-child i {
-  margin-left: 15px;
+  margin-right: 15px;
+  
 } 
 .icon:last-child i {
-  margin-right: 15px;
+  margin-left: 15px;
 } 
 .wrapper-slide .tabs-box {
   display: flex;
@@ -343,7 +354,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
-  text-align: justify;
+  text-align: left;
+
 }
 
 .text-card-medio{
@@ -412,10 +424,13 @@
   text-decoration: none;
 }
 
+.btn-circle:hover{
+  transform: scale(1.2);
+  background-color: #8ab524;
+}
 
 .bg-color-facebook {
-  background-color: #8ab524;
-  
+  background-color: #8ab524;  
 }
 
 .bg-color-instagram {
@@ -474,7 +489,7 @@
   @media screen and (max-width: 900px) {
 
      .wrapper{
-      max-width: 70%;
+      max-width: 70%;     
     }
 
     .carousel img{
@@ -495,12 +510,16 @@
   @media (max-width: 800px) {
     .image-wrapper i {
       display: none;
-    }
+    }   
     
   }
 
 
   @media (max-width: 1000px) {
+
+    .image-wrapper{    
+      justify-content: center !important;
+    }
    
 
     .navbar-collapse {
@@ -547,7 +566,11 @@
 
   @media screen and (max-width: 550px) {    
     .wrapper{         
-      max-width: 90%      
+      max-width: 90%   
+       
+    }
+    .image-wrapper{    
+      justify-content: center !important;
     }
 
     .carousel img{
