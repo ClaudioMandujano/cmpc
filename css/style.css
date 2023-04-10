@@ -121,16 +121,14 @@
 }
 
 .img-bussiness{
-  width: 100%;  
- 
+  width: 100%;   
 } 
 
 .img-bussiness img{  
   width: 60%; 
   padding-top: 40px;
   margin-left: 110px;
-  margin-bottom: 20px;
-     
+  margin-bottom: 20px;     
     }
 
 .search{
@@ -152,8 +150,7 @@
     background-color: #8ab524;
     border: 0;
     border-radius: 25px;
-    float: left;
-    
+    float: left;    
 }
 
 .search button:hover {
@@ -171,7 +168,8 @@
   object-position: bottom;
   display: flex;
   align-items: center;      
-  justify-content: center;       
+  justify-content: center; 
+       
 }
 .card-sug{
   background-color: #ffff;
@@ -180,15 +178,36 @@
   .img-sug{
     margin: auto;
     width: 40%;
-    padding-top: 10%;
-  
+    padding-top: 10%;  
+  }
+
+  .sugerencia button{
+    border: 0.5px solid #dfdede;
+    border-radius: 50px;
+    background-color: #f4f4f4;
+    margin-top: 5px; 
+    margin-bottom: 10px;  
+    width: 75%;
+    border-width: 0.5px;
+    padding-top: 0px; 
+    padding-bottom: 4px;   
+    font-size: 17px;
+    
   }
 
   .sugerencia button:hover{
-    width: 103%;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    background-color: #dfdede;
   }
 
 /* INICIO DE CAROUSEL */
+
+.bg-slider{
+  background-color: #f1f1f1;
+  padding-bottom: 30px;
+}
+
 .box-slider{
   display: flex;
   padding: 0 10px;
@@ -415,8 +434,8 @@
 
 
 .btn-circle {
-  width: 45px;
-  height: 45px;
+  height: 2.5rem;
+   width: 2.5rem;  
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -425,8 +444,9 @@
 }
 
 .btn-circle:hover{
+  transition: all 0.3s ease-in-out;
   transform: scale(1.2);
-  background-color: #8ab524;
+  background-color: #8ab524;  
 }
 
 .bg-color-facebook {
