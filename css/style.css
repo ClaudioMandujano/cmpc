@@ -471,6 +471,29 @@
   transition: all 0.3s ease-in-out; 
 }
 
+.click-img{
+  position: absolute; 
+}
+
+.click-img {
+  animation: scaleAnimation 0.8s ease infinite; /* animación de escala infinita */
+  transform-origin: center; /* establece el punto de origen de la transformación en el centro */
+  cursor: pointer; /* cambia el cursor al hacer clic */
+  opacity: 1; /* ajusta la opacidad de la imagen según tus preferencias */
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1); /* escala inicial */
+  }
+  50% {
+    transform: scale(1.1); /* escala máxima en la mitad de la animación */
+  }
+  100% {
+    transform: scale(1); /* escala final, igual a la inicial */
+  }
+}
+
 .practica {
   display: flex;
   align-items: center;
