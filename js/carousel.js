@@ -48,4 +48,3 @@ tabsBox.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 
 
-

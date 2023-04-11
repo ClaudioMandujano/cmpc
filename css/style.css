@@ -55,13 +55,14 @@
   margin-right: 3px;
 }
 .btn-sesion:hover{
- background-color: #dbd9d9;
- border-radius: 25px;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;  
+  
 }
 
 .btn-cuenta:hover{
-  background-color: #dbd9d9;
-  border-radius: 25px;  
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);   
 }
 
 .card{
@@ -73,7 +74,6 @@
     justify-content: center;
    
 }
-
 
 .user-sesion{
     border-radius: 25px;
@@ -423,6 +423,126 @@
   right: 95%;
 }
 
+/*PROGRAMA */
+
+.btn-postula{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btn-postula button{
+  background: #5BB900;
+   background-image: -webkit-linear-gradient(top, #5BB900, #09740E);
+   background-image: -moz-linear-gradient(top, #5BB900, #09740E);
+   background-image: -ms-linear-gradient(top, #5BB900, #09740E);
+   background-image: -o-linear-gradient(top, #5BB900, #09740E);
+   background-image: -webkit-gradient(to bottom, #5BB900, #09740E);
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   border-radius: 50px;
+   color: #FFFFFF;       
+   border: 0;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   padding-left: 30px;
+   padding-right: 30px;
+   font-size: 20px;
+}
+
+.btn-postula button:hover{
+  border: 0;
+  background: #09740E;
+  background-image: -webkit-linear-gradient(top, #09740E, #5BB900);
+  background-image: -moz-linear-gradient(top, #09740E, #5BB900);
+  background-image: -ms-linear-gradient(top, #09740E, #5BB900);
+  background-image: -o-linear-gradient(top, #09740E, #5BB900);
+  background-image: -webkit-gradient(to bottom, #09740E, #5BB900);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out; 
+}
+
+.practica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.slider-programa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-programa{
+ max-width: 900px;
+ margin: auto;
+}
+
+.icon-program {
+    background: rgb(251,251,251);
+    background: linear-gradient(179deg, rgba(251,251,251,1) 24%, rgba(199,199,199,1) 100%); /* Cambia el color de fondo del icono */
+    color: #3a3a3a;
+    border-radius: 50%; /* Hace que el icono sea redondo */
+    width: 50px; /* Cambia el ancho del icono */
+    height: 50px; /* Cambia el alto del icono */
+    margin-top: -20px; /* Mueve el icono hacia arriba para que esté más separado del slider */
+    font-size: 24px; /* Cambia el tamaño de fuente del icono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Estilos para el ícono de la izquierda */
+  .carousel-control-prev {
+    margin-top: 2px;
+    left: -10%; /* Cambia la distancia del icono de la izquierda al borde del slider */
+   
+  }
+
+  /* Estilos para el ícono de la derecha */
+  .carousel-control-next {
+    margin-top: 2px;
+    right: -10%; /* Cambia la distancia del icono de la derecha al borde del slider */
+  }
+
+
+
+.beneficio {
+margin-top: 70px;
+ max-width: 1120px;
+}
+
+
+.beneficio .card img{
+margin: auto;
+width: 120px
+}
+
+.card-practica{
+  max-width: 900px;
+  
+}
+
+.card-practica img{
+  width: 200px;  
+  margin: auto;
+}
+
+
+
+
+
+
 
 
 /*FOOTER */
@@ -540,32 +660,28 @@
 
     .image-wrapper{    
       justify-content: center !important;
-    }
-   
+    }  
 
     .navbar-collapse {
-      text-align: center;      
-      
+      text-align: center;     
+    
     }
     .navbar-nav > li {
       display: inline-block;
       margin-right: 5px;
       margin-left: 5px;
       vertical-align: middle;
-      
-      
+            
     }
     .btn-user{
       display: flex;
       justify-content: center;
      align-items: center;
-      margin-left: 120px !important;
-      
+      margin-left: 120px !important;      
       
     }
     .navbar-nav > li:last-child {
-      margin-right: 0;
-      
+      margin-right: 0;      
     }
     .nav-link {
       font-size: 14px;
