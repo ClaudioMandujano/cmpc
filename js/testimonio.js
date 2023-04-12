@@ -14,15 +14,22 @@ thumbnails.forEach(thumbnail => {
     const selectedIndex = Array.from(thumbnails).indexOf(event.target);
 
     // Ocultar todos los testimonios
-    testimonials.forEach(testimonial => testimonial.style.display = 'none');
+    testimonials.forEach(testimonial => {
+      testimonial.style.display = 'none';
+      testimonial.style.opacity = 0; // Ocultar con opacidad para evitar desplazamiento
+    });
 
     // Mostrar solo el testimonio correspondiente a la imagen seleccionada
     const testimonialId = thumbnails[selectedIndex].dataset.testimonial;
     const testimonial = document.getElementById(testimonialId);
     if (testimonial) {
       testimonial.style.display = 'block';
+      testimonial.style.opacity = 1; // Mostrar con opacidad
     } else {
-      testimonials.forEach(testimonial => testimonial.style.display = 'block');
+      testimonials.forEach(testimonial => {
+        testimonial.style.display = 'block';
+        testimonial.style.opacity = 1; // Mostrar todos los testimonios con opacidad
+      });
     }
   });
 });
@@ -32,11 +39,20 @@ function showTestimonial(testimonialId) {
   var testimonials = document.querySelectorAll('.testimonial-slider div');
   for (var i = 0; i < testimonials.length; i++) {
     testimonials[i].style.display = 'none';
+    testimonials[i].style.opacity = 0; // Ocultar con opacidad para evitar desplazamiento
   }
 
   // Muestra el testimonio seleccionado
   var testimonial = document.querySelector('.' + testimonialId);
-  testimonial.style.display = 'block';
+  if (testimonial) {
+    testimonial.style.display = 'block';
+    testimonial.style.opacity = 1; // Mostrar con opacidad
+  } else {
+    testimonials.forEach(testimonial => {
+      testimonial.style.display = 'block';
+      testimonial.style.opacity = 1; // Mostrar todos los testimonios con opacidad
+    });
+  }
 }
 
 // Obtén todos los elementos de imagen de los testimonios
