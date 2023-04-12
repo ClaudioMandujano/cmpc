@@ -527,14 +527,14 @@
 
   /* Estilos para el ícono de la izquierda */
   .carousel-control-prev {
-    margin-top: 2px;
+  
     left: -10%; /* Cambia la distancia del icono de la izquierda al borde del slider */
    
   }
 
   /* Estilos para el ícono de la derecha */
   .carousel-control-next {
-    margin-top: 2px;
+    
     right: -10%; /* Cambia la distancia del icono de la derecha al borde del slider */
   }
 
@@ -615,6 +615,28 @@ width: 120px
   
 }
 
+
+.main-image-container {
+  text-align: center;
+}
+
+.thumbnail-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail-img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.thumbnail-img:hover {
+  opacity: 0.7;
+}
 
 
 
