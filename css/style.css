@@ -594,9 +594,14 @@ width: 120px
 .testimonial-slider {
   flex-basis: 100%; /* Cambia el ancho a 100% en pantallas pequeñas */
   padding: 20px;
+  padding-left: 100px;
+  padding-right: 20px;
+  padding-bottom: 50px;
   background-color: #f9f9f9;
   text-align: left;
   display: flex;
+  justify-content: center;
+  place-content: center;
   flex-wrap: wrap; /* Agrega flex-wrap para que los elementos se envuelvan en una nueva línea en pantallas pequeñas */
 }
 
@@ -712,6 +717,12 @@ width: 120px
 @media (max-width: 992px) {
   .container-footer {
     width: 70%;
+  }
+
+  .testimonial-slider { 
+    padding-left: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;    
   }
 }
 
