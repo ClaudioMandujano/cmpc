@@ -638,8 +638,44 @@ width: 120px
   opacity: 0.7;
 }
 
+/*GALERIA */
+
+.main-image{
+  place-content: right;  
+  width: 500px;
+}
 
 
+.programa-galeria{
+  max-width: 1180px;
+}
+
+
+.icons{  
+  background: rgb(251,251,251);
+  background: linear-gradient(179deg, rgba(251,251,251,1) 20%, rgba(199,199,199,1) 100%); /* Cambia el color de fondo del icono */
+  color: #3a3a3a;
+  border: 0;
+  border-radius: 50%;
+  margin: 20px;
+  transform: scale(1.2);
+  font-size: 15px;
+}
+
+.icons:hover{
+  color: #8ab524;
+}
+
+.thumbnail-container-2 {  
+  margin-top: 20px;
+}
+
+.thumbnail-img{
+  border-radius: 30%;
+  max-width: 75px; /* Cambia el valor del ancho máximo de la imagen */
+  max-height: 75px; /* Cambia el valor del alto máximo de la imagen */
+  
+}
 
 /*FOOTER */
 .siguenos{ 
