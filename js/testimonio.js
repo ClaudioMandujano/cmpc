@@ -1,5 +1,5 @@
 const thumbnails = document.querySelectorAll('.thumbnail');
-const mainImage = document.querySelector('.main-image');
+const mainImage = document.querySelector('.main-image-testimonial');
 const testimonials = document.querySelectorAll('.testimonial');
 
 thumbnails.forEach(thumbnail => {
