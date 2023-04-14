@@ -615,6 +615,12 @@ width: 120px
   color: #8ab524;
 }
 
+hr{
+ background-color: #99cc33; 
+ border: 0;
+ height: 3px;
+}
+
 .main-image-container {
   text-align: center;
 }
