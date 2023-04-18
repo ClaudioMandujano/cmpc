@@ -910,6 +910,7 @@ hr {
         background-color: #dfdede !important;
         max-width: 400px;
         padding: 15px;
+        white-space: nowrap !important;
       }
     
                     
