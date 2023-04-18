@@ -52,18 +52,17 @@
   flex-grow: 1;
 }
 
- .social{  
-  justify-content: space-between !important;
- }
-
 .navbar-nav .nav-item:nth-child(2) {
   margin-right: 3px;
 }
+
+
 
 .navbar-collapse .navbar-nav .nav-link .fab {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .btn-sesion:hover{
@@ -901,6 +900,14 @@ hr {
       padding-bottom: 20px;
       padding-left: 50px;
       width: 70%;
-      }    
+      } 
+     
+      .navbar-collapse li{
+        margin-top: 12px;       
+      }   
+
+      .navbar-collapse button{
+        background-color: #dfdede !important;
+      }
                     
   }
