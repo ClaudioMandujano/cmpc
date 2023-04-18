@@ -908,6 +908,9 @@ hr {
 
       .navbar-collapse button{
         background-color: #dfdede !important;
+        max-width: 400px;
+        padding: 15px;
       }
+    
                     
   }
