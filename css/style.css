@@ -631,11 +631,13 @@ width: 120px
   color: #8ab524;
 }
 
-hr {
-  background-color: #99cc33; /* Color de fondo de la línea */
-  height: 3px; /* Altura de la línea */
-  width: 250px; /* Ancho de la línea */
-  border: 1 solid;
+.linea{
+  background-color: #8bb329;
+  height: 1px;
+  width: 250px;
+  border: 1px solid #8bb329;
+  box-shadow: 0px 0px 2px 2px #c7d99b;
+  opacity: 1;
 }
 
 .main-image-container {
@@ -827,9 +829,7 @@ hr {
 
     .img-fondo{
       width: 100% !important ;
-    }
-
-    
+    }    
   }
 
   @media screen and (max-width: 900px) {
@@ -846,10 +846,9 @@ hr {
        align-items: center;
    
        flex-direction: column;   
-       justify-content: center;     
+       justify-content: center;   
       
-   }  
-     
+   }      
 
  }
 
