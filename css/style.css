@@ -407,29 +407,29 @@
 
 .card-image-corrugado{
   position: absolute;
-  width: 160px;
-  top: 40%;
+  width: 230px;
+  top: 30%;
   right: 95%;
 }
 
 .card-image-box{
   position: absolute;
-  width: 130px;
-  top: 40%;
+  width: 210px;
+  top: 12%;
   right: 97%;
 }
 
 .card-image-sack{
   position: absolute;
-  width: 200px;
-  top: 40%;
-  right: 93%;
+  width: 250px;
+  top: 30%;
+  right: 91%;
 }
 
 
 .card-image-edipac{
   position: absolute;
-  width: 130px;
+  width: 160px;
   top: 30%;
   right: 95%;
 }
@@ -663,19 +663,32 @@ width: 120px
 }
 
 /*GALERIA */
+/* Estilos para la caja contenedora de las miniaturas */
+.thumbnail-box {
+  overflow: hidden; /* Oculta las partes de las miniaturas que se salgan de la caja */
+}
 
+/* Estilos para las miniaturas */
+.thumbnail {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out; /* Transición suave al cambiar la transformación */
+}
 .main-image{
-  place-content: right;  
+  justify-content: flex-end; /* Cambia 'place-content' a 'justify-content' para alinear la imagen a la derecha */
   width: 500px;
-}
-
-
-.programa-galeria{
+  }
+  
+  .programa-galeria{
   max-width: 1180px;
-}
-
-
-.icons{  
+  }
+  
+  .icons{
   background: rgb(251,251,251);
   background: linear-gradient(179deg, rgba(251,251,251,1) 20%, rgba(199,199,199,1) 100%); /* Cambia el color de fondo del icono */
   color: #3a3a3a;
@@ -684,22 +697,22 @@ width: 120px
   margin: 20px;
   transform: scale(1.2);
   font-size: 15px;
-}
-
-.icons:hover{
-  color: #8ab524;
-}
-
-.thumbnail-container-2 {  
-  margin-top: 20px;
-}
-
-.thumbnail-img{
-  border-radius: 30%;
-  max-width: 75px; /* Cambia el valor del ancho máximo de la imagen */
-  max-height: 75px; /* Cambia el valor del alto máximo de la imagen */
+  }
   
-}
+  .icons:hover{
+  color: #8ab524;
+  }
+  
+  .thumbnail-container-2 {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+  }
+  
+  .thumbnail-img {
+    margin-right: 5px;
+    max-width: 100px;
+  }
 
 /*FOOTER */
 .siguenos{ 

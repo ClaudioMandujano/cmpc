@@ -8,7 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css"> 
     <script src="https://kit.fontawesome.com/7ae5aaf9af.js" crossorigin="anonymous"></script>  
-    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    ...
 
     <title>CMPC</title>
 </head>
@@ -324,8 +327,8 @@
       
                 <!-- Final Testimonio -->
               <!-- Galeria -->
-              <div class="container programa-galeria">
-                <div class="row" style="margin-left: 20px ; margin-right: 20px ;">
+            <div class="container programa-galeria">
+                <div class="row" style="margin-left: 20px; margin-right: 20px;">
                   <div class="col-12 col-md-5 d-flex align-items-center justify-content-center text-md-right">
                     <h4 class="mt-3" style="font-size: 40px;">Conoce nuestra<br>
                       galería de <br>
@@ -339,25 +342,30 @@
                     </div>
                   </div>
                 </div>
-                <div class="row contenedor-thumb">
+                <div class="row contenedor-thumb justify-content-center">
                   <div class="col-12">
-                    <div class="thumbnail-container-2 d-flex">
+                    <div class="thumbnail-container-2 d-flex slider flex-wrap justify-content-center">
                       <button class="btn btn-link thumbnail-btn icons" onclick="prevImage()"><i class="fas fa-chevron-left"></i></button>
-                      <img class="thumbnail-img img-fluid" src="img/Programasweb/Galeria/minifoto1.png" alt="Miniatura 3" onclick="changeImage('img/Programasweb/Galeria/foto1.png')">
-                      <img class="thumbnail-img img-fluid" src="img/Programasweb/Galeria/minifoto2.png" alt="Miniatura 4" onclick="changeImage('img/Programasweb/Galeria/foto2.png')">
-                      <img class="thumbnail-img img-fluid" src="img/Programasweb/Galeria/minifoto3.png" alt="Miniatura 3" onclick="changeImage('img/Programasweb/Galeria/foto3.png')">
-                      <img class="thumbnail-img img-fluid" src="img/Programasweb/Galeria/minifoto4.png" alt="Miniatura 4" onclick="changeImage('img/Programasweb/Galeria/foto4.png')">
-                      <img class="thumbnail-img img-fluid" src="img/Programasweb/Galeria/minifoto5.png" alt="Miniatura 5" onclick="changeImage('img/Programasweb/Galeria/foto5.png')">
-                      <img class="thumbnail-img img-fluid" src="img/Programasweb/Galeria/minifoto6.png" alt="Miniatura 3" onclick="changeImage('img/Programasweb/Galeria/foto6.png')">
-                      <img class="thumbnail-img img-fluid" src="img/Programasweb/Galeria/minifoto7.png" alt="Miniatura 4" onclick="changeImage('img/Programasweb/Galeria/foto7.png')">
-                      <img class="thumbnail-img img-fluid" src="img/Programasweb/Galeria/minifoto8.png" alt="Miniatura 4" onclick="changeImage('img/Programasweb/Galeria/foto8.png')">
-                      <img class="thumbnail-img img-fluid" src="img/Programasweb/Galeria/minifoto9.png" alt="Miniatura 4" onclick="changeImage('img/Programasweb/Galeria/foto9.png')">                      
+                      <img class="thumbnail-img img-fluid active" src="img/Programasweb/Galeria/minifoto1.png" alt="Miniatura 1" onclick="changeImage('img/Programasweb/Galeria/foto1.png', 1)">
+                      <img class="thumbnail-img img-fluid " src="img/Programasweb/Galeria/minifoto2.png" alt="Miniatura 2" onclick="changeImage('img/Programasweb/Galeria/foto2.png', 2)">
+                      <img class="thumbnail-img img-fluid " src="img/Programasweb/Galeria/minifoto3.png" alt="Miniatura 3" onclick="changeImage('img/Programasweb/Galeria/foto3.png', 3)">
+                      <img class="thumbnail-img img-fluid " src="img/Programasweb/Galeria/minifoto4.png" alt="Miniatura 4" onclick="changeImage('img/Programasweb/Galeria/foto4.png', 4)">
+                      <img class="thumbnail-img img-fluid " src="img/Programasweb/Galeria/minifoto5.png" alt="Miniatura 5" onclick="changeImage('img/Programasweb/Galeria/foto5.png', 5)">
+                      <img class="thumbnail-img img-fluid " src="img/Programasweb/Galeria/minifoto6.png" alt="Miniatura 6" onclick="changeImage('img/Programasweb/Galeria/foto6.png', 6)">
+                      <img class="thumbnail-img img-fluid " src="img/Programasweb/Galeria/minifoto7.png" alt="Miniatura 7" onclick="changeImage('img/Programasweb/Galeria/foto7.png', 7)">
+                      <img class="thumbnail-img img-fluid " src="img/Programasweb/Galeria/minifoto8.png" alt="Miniatura 8" onclick="changeImage('img/Programasweb/Galeria/foto8.png', 8)">
+                      <img class="thumbnail-img img-fluid " src="img/Programasweb/Galeria/minifoto9.png" alt="Miniatura 9" onclick="changeImage('img/Programasweb/Galeria/foto9.png', 9)">
+                                          
                       <button class="btn btn-link thumbnail-btn icons" onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- Final Galeria -->
+              <!-- Place somewhere in the <body> of your page -->
+
+                
+               
             
             <section>
               <div class="container btn-postula">
@@ -372,9 +380,6 @@
                 });
               });
             </script>
-
-
-
 
                <!-- FOOTER -->      
                 <footer class="d-none d-md-block">
