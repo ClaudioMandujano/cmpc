@@ -714,6 +714,62 @@ width: 120px
     max-width: 100px;
   }
 
+
+/*SECCIÓN QUIENES SOMOS*/
+
+/*.purpose{
+  background: url(../img/somos/circle.png) no-repeat;
+  background-size: cover; 
+  
+} */
+  
+
+.purpose h2{
+ margin-top: 35px;
+ font-size: 30px !important;
+ font-weight: bold;
+ color: #474747;
+}
+
+.purpose-text h4{
+  font-size: 35px !important; 
+  font-weight: bold;
+}
+
+.purpose h3{
+  font-size: 55px !important; 
+  font-weight:900;
+}
+
+.purpose-text{
+  display: grid;
+  place-content: center;
+  justify-content: center; 
+  padding-right: 200px; 
+}
+
+.text-green{
+  color: #8ab525;;
+}
+
+.text-oliva{
+ color: #6f7e3c
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*FOOTER */
 .siguenos{ 
   height: 1px;  
