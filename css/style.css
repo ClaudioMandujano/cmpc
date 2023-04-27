@@ -782,6 +782,18 @@ width: 120px
   flex-wrap: wrap; /* Agrega flex-wrap para que los elementos se envuelvan en una nueva línea en pantallas pequeñas */
 }
 
+.text-val{
+ font-size: 16px;
+ padding-bottom: 22px;
+ color: #656565 !important;
+ padding-left: 14px;
+ padding-right: 14px ;
+}
+
+.card-valores img{
+ width: 150px;
+ 
+}
 
 
 
