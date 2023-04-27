@@ -1008,6 +1008,16 @@ width: 120px
         white-space: nowrap !important;
       }
 
+      .img-somos{
+        width: 315px;
+      }
+
+      .thumbnail-somos{
+        max-width: 300px;
+        margin: 0;
+        padding: 0;
+      }
+
       
                     
   }
