@@ -796,6 +796,10 @@ width: 120px
  width: 50%;
  height: auto !important;
 }
+.card-somos{
+  border-radius: 15px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3) !important;
+}
 
 
 
