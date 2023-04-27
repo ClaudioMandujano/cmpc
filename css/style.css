@@ -774,6 +774,10 @@ width: 120px
   background-position: center center;
 }
 
+.img-somos{
+  width: 800px !important;
+}
+
 .somos-text {
   flex-basis: 100%; /* Cambia el ancho a 100% en pantallas pequeñas */
   background-color: #f9f9f9;
@@ -782,6 +786,8 @@ width: 120px
   justify-content: center;
   place-content: center;
   flex-wrap: wrap; /* Agrega flex-wrap para que los elementos se envuelvan en una nueva línea en pantallas pequeñas */
+  padding: 0 !important;
+  padding-bottom: 50px;
 }
 
 .text-val{
