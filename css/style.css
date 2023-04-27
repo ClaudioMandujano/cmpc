@@ -785,16 +785,16 @@ width: 120px
 }
 
 .text-val{
- font-size: 16px;
+ font-size: 14px;
  padding-bottom: 22px;
  color: #656565 !important;
- padding-left: 14px;
- padding-right: 14px ;
+ padding-left: 2px;
+ padding-right: 2px ;
 }
 
 .card-valores img{
  width: 50%;
- 
+ height: auto !important;
 }
 
 
