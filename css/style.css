@@ -876,6 +876,13 @@ width: 120px
 
   @media (max-width: 1000px) {
 
+    .purpose-text{
+      margin-top: 20px;
+      padding: 0;
+    }
+
+
+
     .image-wrapper{    
       justify-content: center !important;
     }  
