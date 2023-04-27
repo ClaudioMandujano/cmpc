@@ -1061,5 +1061,19 @@ width: 120px
         transition: all 0.0s ease-in-out;
         transform: scale(0);
       }
+
+      .img-testimonio{
+        width: 310px;
+      }
          
+      .thumbnail-container{
+        max-width: 300px;
+        margin: 0;
+        padding: 0;
+      }
+      .thumbnail{
+        width: 50px;
+        margin: 5px;
+        margin-top: 10px;
+      }
   }
