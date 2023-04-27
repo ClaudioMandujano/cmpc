@@ -171,7 +171,7 @@
  /* SECCIÓN DE SUGERENCIA */
 
  .sugerencia{
-  background: url(../img/bosque.png) no-repeat;
+  
   background-position: center;
   height: 50vh;
   width: 100%;    
@@ -721,8 +721,14 @@ width: 120px
   background: url(../img/somos/circle.png) no-repeat;
   background-size: cover; 
   
-} */
-  
+}
+*/
+ 
+.bg-purpose{
+  background: url(../img/somos/circle.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 
 .purpose h2{
  margin-top: 35px;
@@ -761,14 +767,25 @@ width: 120px
  max-width: 80%;
 }
 
-.cifras-image {
+/*.cifras-image {
   background-image: url("../img/somos/cmpcifras.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
   height: 0;
-  padding-bottom: 35.26%; /* proporción de 676/1920 */
+  padding-bottom: 35.26%;  proporción de 676/1920 
 }
+
+.mapa-image {
+  background-image: url("../img/somos/mapa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 0;
+  padding-bottom: 60.26%;  proporción de 1057/1920 
+}
+
+*/
 
 
 
