@@ -767,7 +767,11 @@ width: 120px
  max-width: 80%;
 }
 
-
+.bg-papel{
+  background: url(../img/somos/fondopapel.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 
 
 
