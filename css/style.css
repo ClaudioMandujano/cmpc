@@ -823,6 +823,78 @@ width: 120px
   background-color: #8ab525 !important;
 }
 
+/*  SECCIÓN DE SOFTYS */
+.btn-softys{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btn-softys button {
+  background: linear-gradient(to bottom, #005cb9,  #002f6f);
+  border-radius: 50px;
+  color: #FFFFFF;
+  border: 0;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+}
+.btn-softys button:hover{
+  border: 0;
+  background: linear-gradient(to bottom,  #002f6f, #005cb9);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out; 
+}
+.card-image-elite{
+  position: absolute;
+  width: 200px;
+  top: 30%;
+  right: 90%;
+}
+
+.card-image-away{
+  position: absolute;
+  width: 200px;
+  top: 32%;
+  right: 92%;
+}
+.card-image-babysec{
+  position: absolute;
+  width: 200px;
+  top: 28%;
+  right: 90%;
+}
+
+.cards-softys{
+  max-width: 1040px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  flex-direction: initial !important;
+}
+
+.cards-softys h2{
+  color: #005cb9;
+  font-weight:900;
+  font-size: 50px !important;
+}
+
+.card-image-consumer{
+  width: 9vh;
+  margin:auto;
+  margin-top: 17%;
+}
+
 
 /*FOOTER */
 .siguenos{ 
