@@ -516,6 +516,10 @@
   align-items: center;
   justify-content: center;
 }
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 9999;
+}
 
 .carousel-programa{
  max-width: 900px;
@@ -531,22 +535,19 @@
     height: 50px; /* Cambia el alto del icono */
     margin-top: -20px; /* Mueve el icono hacia arriba para que esté más separado del slider */
     font-size: 24px; /* Cambia el tamaño de fuente del icono */
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
   }
 
   /* Estilos para el ícono de la izquierda */
-  .carousel-control-prev {
-  
-    left: -10%; /* Cambia la distancia del icono de la izquierda al borde del slider */
-   
+  .carousel-control-prev {  
+    left: -4%; /* Cambia la distancia del icono de la izquierda al borde del slider */   
   }
 
   /* Estilos para el ícono de la derecha */
-  .carousel-control-next {
-    
-    right: -10%; /* Cambia la distancia del icono de la derecha al borde del slider */
+  .carousel-control-next {    
+    right: -4%; /* Cambia la distancia del icono de la derecha al borde del slider */
   }
 
 
@@ -716,12 +717,6 @@ width: 120px
 
 /*SECCIÓN QUIENES SOMOS*/
 
-/*.purpose{
-  background: url(../img/somos/circle.png) no-repeat;
-  background-size: cover; 
-  
-}
-*/
  
 .bg-purpose{
   background: url(../img/somos/circle.png) no-repeat;
@@ -1089,9 +1084,10 @@ width: 120px
     .image-wrapper{        
       justify-content: center !important;
     }
+     
     .image-wrapper img{        
-      width: 45%;
-    }
+        width: 45%;
+      }
 
     .carousel img{
       width: 20%;
