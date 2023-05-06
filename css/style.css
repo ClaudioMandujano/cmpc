@@ -1234,8 +1234,7 @@ width: 120px
         width: 100%;
       }
          
-      .thumbnail-container{
-        max-width: 300px;
+      .thumbnail-container{       
         margin: 0;
         padding: 0;
       }
@@ -1267,6 +1266,14 @@ width: 120px
         transition: none;
         transform: none; 
       }
+
+      .imgprogram{
+        margin: 0 !important;
+        width: 60px !important;
+        height: auto !important;
+      }
+    
+
   }
 
 
