@@ -86,58 +86,59 @@
 
             <!-- FINAL QUIENES SOMOS -->  
             <!-- HERO SECTION -->
-            <div class="slider-frame">
-              <ul>
-                  <li><img src="img/slide1.png" alt=""></li>
-                  <li><img src="img/slide2.png" alt=""></li>
-                  <li><img src="img/slide3.png" alt=""></li>
-                  <li><img src="img/slide4.png" alt=""></li>
-                  <li><img src="img/slide5.png" alt=""></li>
-                  <li><img src="img/slide6.png" alt=""></li>
-              </ul>
-          </div>
-      
-              <style>
-              
-      .slider-frame {
-        width: 100%;
-        height: auto;        
-        overflow: hidden;
-      }
-      
-      .slider-frame ul {
-        display: flex;
-        padding: 0;
-        width: 500%;
-            
-        animation: slide 20s infinite alternate ease-in-out;
-      }
-      
-      .slider-frame li {
-        width: 100%;
-        list-style: none;
-      }
-      
-      .slider-frame img {
-        width: 100%;
-      }
-      
-      @keyframes slide {
-        0% {margin-left: 0;}
-        20% {margin-left: 0;}
-        
-        25% {margin-left: -100%;}
-        45% {margin-left: -100%;}
-        
-        50% {margin-left: -200%;}
-        70% {margin-left: -200%;}
-        
-        75% {margin-left: -300%;}
-        100% {margin-left: -300%;}
-      }
-              </style>
 
-            </style>
+            <div class="d-none d-md-block" style="max-width:100%">
+              <img class="mySlides" src="https://carreras.diezpalmeras.cl/cmpc/img/slide1.png" style="width:100%" >
+              <img class="mySlides" src="https://carreras.diezpalmeras.cl/cmpc/img/slide2.png" style="width:100%" >
+              <img class="mySlides" src="https://carreras.diezpalmeras.cl/cmpc/img/slide3.png" style="width:100%" >
+              <img class="mySlides" src="https://carreras.diezpalmeras.cl/cmpc/img/slide4.png" style="width:100%" >
+              <img class="mySlides" src="https://carreras.diezpalmeras.cl/cmpc/img/slide5.png" style="width:100%" >
+              <img class="mySlides" src="https://carreras.diezpalmeras.cl/cmpc/img/slide6.png" style="width:100%" >
+            </div>
+
+            <div class="d-md-none"  style="max-width:100%">
+              <img class="mySlidesMobile" src="https://carreras.diezpalmeras.cl/cmpc/img/slide-mobile-01.png" style="width:100%" >
+              <img class="mySlidesMobile" src="https://carreras.diezpalmeras.cl/cmpc/img/slide-mobile-02.png" style="width:100%" >
+              <img class="mySlidesMobile" src="https://carreras.diezpalmeras.cl/cmpc/img/slide-mobile-03.png" style="width:100%" >
+              <img class="mySlidesMobile" src="https://carreras.diezpalmeras.cl/cmpc/img/slide-mobile-04.png" style="width:100%" >
+              <img class="mySlidesMobile" src="https://carreras.diezpalmeras.cl/cmpc/img/slide-mobile-05.png" style="width:100%" >
+              <img class="mySlidesMobile" src="https://carreras.diezpalmeras.cl/cmpc/img/slide-mobile-06.png" style="width:100%" >
+            </div>
+            
+            <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 4000); // Change image every 4 seconds
+            }
+            </script>
+
+            <script>
+              var myIndexMobile = 0;
+              carouselMobile();
+              
+              function carouselMobile() {
+                var i;
+                var x = document.getElementsByClassName("mySlidesMobile");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndexMobile++;
+                if (myIndexMobile > x.length) {myIndexMobile = 1}    
+                x[myIndexMobile-1].style.display = "block";  
+                setTimeout(carouselMobile, 4000); // Change image every 4 seconds
+              }
+              </script>
+
             <!-- FINAL HERO SECTION -->
             <!-- CARD CONOCE NUESTRO NEGOCIO-->              
            

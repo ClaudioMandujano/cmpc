@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://carreras.diezpalmeras.cl/cmpc/css/style.css" rel="stylesheet" type="text/css"> 
+    <script src="https://kit.fontawesome.com/7ae5aaf9af.js" crossorigin="anonymous"></script>  
+    <script src="https://carreras.diezpalmeras.cl/cmpc/js/slide.js"></script>
+  
+    <title>CMPC</title>
+</head>
+<body>
+    
+  
+      <div>
+      
+          <!-- NAVBAR SECTION -->
+          <section class="mt-3 navbar-custom">      
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" style="margin-left: 12%;" href="/">
+                        <img src="https://carreras.diezpalmeras.cl/cmpc/img/logo.png" alt="Logo" height="40" width="180px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mt-3 mb-lg-0 align-items-center">
+                            <li class="nav-item d-flex">
+                                <a class="nav-link social" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="nav-link social" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="nav-link social" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="nav-link social" href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item flex-grow-1 btn-cuenta" style="margin-left: 10px;">
+                                <button type="button" class="nav-link btn btn-outline-secondary btn-rounded py-1 px-3" style="background-color: transparent; border: 1; border-radius: 25px; font-size: 14px;font-weight: bold;height: 37px;">
+                                    Crea tu cuenta
+                                </button>
+                            </li>
+                            <li class="nav-item flex-grow-1 btn-sesion" style="margin-right: 120px; margin-left: 5px;">
+                                <button type="button" class="nav-link btn-user btn btn-outline-secondary btn-rounded py-1 px-3" style="background-color: transparent; border: 1; border-radius: 25px; font-size: 14px; font-weight: bold; color: #8ab524;height: 37px; "><i class="fa-solid fa-user" style="color: #6b6b6b;"></i>
+                                    Inicia sesión
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown">              
+                                <button type="button" class="nav-link dropdown-toggle btn btn-outline-secondary btn-rounded py-2 px-4" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: transparent; border: 1; border-radius: 25px; font-size: 14px; font-weight: bold; height: 37px;">
+                                    Spanish(Latin America)
+                                </button>
+        
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="margin-left: 15%;">
+                                    <li><a class="dropdown-item" href="#">Enlace 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Enlace 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Enlace 3</a></li>
+                                </ul>
+                            </li>           
+              </ul></div>
+            </div>
+          </nav>      
+        </section>
+                <!-- FINAL NAVBAR SECTION -->     
+                <!-- QUIENES SOMOS -->  
+                      <section style="background-color: #f0eeee;">
+                        <nav class="navbar navdown navbar-expand-lg">
+                            <div class="container-fluid">  
+                                <ul class="navbar-nav mx-auto" style="padding-top: 20px; font-weight: bold; font-size: 17px;">                            
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="/celulosa.html" ><i class="fa-solid fa-caret-right px-3" style="color: #8ab524; "></i>Quienes Somos</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="/Biopackaging.html" ><i class="fa-solid fa-caret-right px-3" style="color: #8ab524; "></i>Oportunidades Laborales</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#" ><i class="fa-solid fa-caret-right px-3" style="color: #8ab524; "></i>Programa de Prácticas</a>
+                                  </li>
+                                </ul>                          
+                            </div>
+                          </nav>
+                      </section>
+      
+                <!-- FINAL QUIENES SOMOS -->  
+                <!-- HERO SECTION -->              
+
+<div style="max-width:100%">
+  <img class="mySlides" src="img/slide1.png" style="width:100%">
+  <img class="mySlides" src="img/slide2.png" style="width:100%">
+  <img class="mySlides" src="img/slide3.png" style="width:100%">
+  <img class="mySlides" src="img/slide4.png" style="width:100%">
+  <img class="mySlides" src="img/slide5.png" style="width:100%">
+  <img class="mySlides" src="img/slide6.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+
+
+
+         
+                
+      <script id="aioa-adawidget" src="https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=#d1202f&token=&position=bottom_right"></script>
+      <script src="https://carreras.diezpalmeras.cl/cmpc/js/carousel.js"></script>      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      </div>
+
+
+
+
+
+
+
+</body>
+</html>
