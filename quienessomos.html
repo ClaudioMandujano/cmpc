@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css"> 
-    <script src="https://kit.fontawesome.com/7ae5aaf9af.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7ae5aaf9af.js" crossorigin="anonymous"></script>    
 
     <title>Quienes Somos</title>
 </head>
@@ -175,9 +175,48 @@
      <img src="img/somos/cmpcifras.png" class="w-100 img-fluid d-block" style="margin-bottom: -28px">
      </div> 
      <div>
-      <img src="img/somos/mapa.png" class="w-100 img-fluid d-block">     
+      <img src="img/somos/mapa.png" class="w-100 img-fluid d-block" usemap="#mapa-paises">
+      <map name="mapa-paises">
+        <area alt="" title="" href="" coords="730,802,22" shape="circle" href="javascript:void(0);" onmouseover="mostrarMensaje(event, 'chile')" onmouseout="ocultarMensaje()">
+        <area alt="" title="" href="" coords="903,753,22" shape="circle" href="javascript:void(0);"  onmouseover="mostrarMensaje(event, 'brasil')" onmouseout="ocultarMensaje()">        
+      </map>
     </div>
-  </div>
+    <div id="mensaje" class="pais-texto" style="display:none; position: absolute; font-size: 30px; background-color: #fff; padding: 5px; border: 1px solid #000;"> </div>  
+     
+     </div>
+
+      <style>
+      .pais-texto{
+        width: 200px;
+        height: 200px;
+        background-color: #fff;
+        border: 0;
+      }
+
+        area:hover::after {
+      content: attr(title);
+      display: none;
+    }
+  </style>
+
+      <script>
+      function mostrarMensaje(evento, pais) {
+        var mensajeDiv = document.getElementById("mensaje");
+        if (pais == "chile") {
+          mensajeDiv.innerHTML = "ESTO ES CHILE";
+        } else if (pais == "brasil") {
+          mensajeDiv.innerHTML = "ESTO ES BRASIL";
+        }
+        mensajeDiv.style.display = "block";
+        mensajeDiv.style.left = evento.pageX + "px";
+        mensajeDiv.style.top = evento.pageY + "px";
+      }  
+
+      function ocultarMensaje() {
+        document.getElementById("mensaje").style.display = "none";
+      }
+            </script>     
+
     </div>
      <!-- MAPA  -->
       <!-- SLIDER -->
