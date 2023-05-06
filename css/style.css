@@ -1245,7 +1245,28 @@ width: 120px
         margin-top: 10pxg;
       }
 
+      .texto-programa1 h4{
+        text-align: center !important;
+        font-size: 30px !important;
+      }
    
+      .testimonial-slider{
+        text-align: center !important;
+      }
+
+      .linea{
+        background-color: #8bb329;
+        height: 1px;
+        width: 100%;
+        border: 1px solid #8bb329;
+        box-shadow: 0px 0px 2px 2px #c7d99b;
+        opacity: 1;
+      }
+
+      .card-practica img:hover{
+        transition: none;
+        transform: none; 
+      }
   }
 
 
