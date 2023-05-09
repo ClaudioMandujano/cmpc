@@ -175,55 +175,12 @@
      <img src="img/somos/cmpcifras.png" class="w-100 img-fluid d-block" style="margin-bottom: -28px">
      </div> 
      <div>
-      <img src="img/somos/mapa.png" class="w-100 img-fluid d-block" usemap="#mapa-paises">
-      <map name="mapa-paises">
-        <area alt="" title="" href="" coords="730%,802%,22%" shape="circle" href="javascript:void(0);" onmouseover="mostrarMensaje(event, 'chile')" onmouseout="ocultarMensaje()">
-        <area alt="" title="" href="" coords="903%,753%,22%" shape="circle" href="javascript:void(0);"  onmouseover="mostrarMensaje(event, 'brasil')" onmouseout="ocultarMensaje()">        
-        <area alt="" title="" href="" coords="1490%,561%,20%" shape="circle" href="javascript:void(0);"  onmouseover="mostrarMensaje(event, 'china')" onmouseout="ocultarMensaje()">        
-    
-      </map>
-    </div>
-    <div id="mensaje" class="pais-texto" style="display:none; position: absolute; font-size: 30px; background-color: #fff; padding: 5px; border: 1px solid #000;"> </div>  
-     
-     </div>
-
-      <style>
-      .pais-texto{
-        width: 200px;
-        height: 200px;
-        background-color: #fff;
-        border: 0;
-      }
-
-        area:hover::after {
-      content: attr(title);
-      display: none;
-    }
-  </style>
-
-      <script>
-      function mostrarMensaje(evento, pais) {
-        var mensajeDiv = document.getElementById("mensaje");
-        if (pais == "chile") {
-          mensajeDiv.innerHTML = "ESTO ES CHILE";
-        } else if (pais == "brasil") {
-          mensajeDiv.innerHTML = "ESTO ES BRASIL";
-        }
-        else if (pais == "china") {
-          mensajeDiv.innerHTML = "ESTO ES CHINA";
-        }
-        mensajeDiv.style.display = "block";
-        mensajeDiv.style.left = evento.pageX + "px";
-        mensajeDiv.style.top = evento.pageY + "px";
-      }  
-
-      function ocultarMensaje() {
-        document.getElementById("mensaje").style.display = "none";
-      }
-            </script>     
+      <script src="//my.visme.co/visme-embed.js"></script><div class="visme_d" data-title="Agriculture Choropleth Map" data-url="ojv1kd87-untitled-project" data-w="1920" data-full-h="false" data-h="1080" data-domain="my"></div><p style="width:142px !important;border-radius:3px !important;padding:3px !important;font-size:12px !important;font-family:Arial, sans-serif !important;color:#314152 !important;white-space:nowrap !important">Hecho con<a href="https://www.visme.co/?vc=Made-With-Visme&amp;utm_medium=Embed" target="_blank" rel="noreferrer" style="font-weight:600 !important;text-decoration:none !important;font-size:12px !important;font-family:Arial, sans-serif !important;color:#314152 !important;white-space:nowrap !important">Visme</a></p>
+     </div> 
 
     </div>
-     <!-- MAPA  -->
+
+      <!-- MAPA  -->
       <!-- SLIDER -->
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin-top: -16px">
         <div class="carousel-indicators">
